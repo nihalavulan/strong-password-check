@@ -41,13 +41,13 @@ console.log(result);
 - `config`: An object containing the configuration options for the password strength checker. The following options are available:
 
 
-| value     | Type     | Default Value  | Description                                                       |
-| --------- | -------- | -------------- | ----------------------------------------------------------------- |
-| uppercase | Boolean  | true           | Whether the password must contain at least one uppercase letter.  |
-| lowercase | Boolean  | true           | Whether the password must contain at least one lowercase letter.  |
-| numbers   | Boolean  | true           | Boolean. Whether the password must contain at least one number.   |  
-| symbols   | Boolean  | true           | Whether the password must contain at least one symbol.            |
-| minLength | Number   | 8              | Number. The minimum length of the password.                       |
+| value         | Type     | Default Value  | Description                                                       |
+| -----------   | -------- | -------------- | ----------------------------------------------------------------- |
+| uppercase     | Boolean  | true           | Whether the password must contain at least one uppercase letter.  |
+| lowercase     | Boolean  | true           | Whether the password must contain at least one lowercase letter.  |
+| digits        | Boolean  | true           | Boolean. Whether the password must contain at least one number.   |  
+| specialChars  | Boolean  | true           | Whether the password must contain at least one special charecter. |
+| minLength     | Number   | 8              | Number. The minimum length of the password.                       |
 
 
 #### The **getPasswordStrength** function returns an object with two properties:
