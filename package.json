@@ -1,0 +1,26 @@
+{
+  "name": "strong-password-check",
+  "version": "1.0.0",
+  "description": "Check the strength of the password inputed and returns what needs to be updated in the password for that to be more strong.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihalavulan/strong-password-check.git"
+  },
+  "keywords": [
+    "strong",
+    "password",
+    "check",
+    "strength",
+    "checker"
+  ],
+  "author": "nihalavulan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nihalavulan/strong-password-check/issues"
+  },
+  "homepage": "https://github.com/nihalavulan/strong-password-check#readme"
+}
