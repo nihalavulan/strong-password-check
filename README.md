@@ -10,14 +10,14 @@ A Node.js module that checks the strength of a password based on configurable cr
 
 #### To install the package, run the following command:
 
-`npm i check-password-strength --save`
+`npm i strong-password-check --save`
 
 
 
 ## Usage
 
 ```javascript
-const getPasswordStrength = require('password-strength-checker');
+const getPasswordStrength = require('strong-password-check');
 
 const password = 'myPassword123#';
 
