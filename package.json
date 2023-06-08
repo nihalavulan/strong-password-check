@@ -1,6 +1,6 @@
 {
-    "name": "ts-password-check",
-    "version": "2.0.0",
+    "name": "strong-password-check",
+    "version": "1.0.1",
     "description": "Check the strength of the password inputed and returns what needs to be updated in the password for that to be more strong.",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mza-codes/ts-password-check.git"
+        "url": "git+https://github.com/nihalavulan/strong-password-check.git"
     },
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -57,16 +57,16 @@
         "strength",
         "check-password-strength",
         "password-strength-checker",
-        "ts-password-check",
+        "strong-password-check",
         "strength-checker",
         "password-checker",
         "password-checker-strength",
         "pass-strength"
     ],
-    "author": "mza-codes",
+    "author": "nihalavulan",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/mza-codes/ts-password-check/issues"
+        "url": "https://github.com/nihalavulan/strong-password-check/issues"
     },
-    "homepage": "https://github.com/mza-codes/ts-password-check#readme"
+    "homepage": "https://github.com/nihalavulan/strong-password-check#readme"
 }

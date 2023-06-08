@@ -1,10 +1,10 @@
-import { Config } from "../constants/defaultConfig";
+import { DefaultConfig } from "../types";
 
-const getThreshold = (config: Config) => {
-  const threshold =
-    Object.values(config).filter((value) => value === true).length + 1 || 5;
+const getThreshold = (config: DefaultConfig) => {
+    const threshold =
+        Object.values(config).filter((value) => value === true).length + 1 || 5;
 
-  return threshold;
+    return threshold;
 };
 
 export default getThreshold;

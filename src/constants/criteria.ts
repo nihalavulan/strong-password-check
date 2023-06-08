@@ -1,4 +1,6 @@
-const criteria = {
+import { Criteria } from "../types";
+
+const criteria: Criteria = {
     lowercase: {
         pattern: /[a-z]/,
         score: 1,
@@ -21,5 +23,4 @@ const criteria = {
     },
 };
 
-export type Criteria = keyof typeof criteria;
 export default criteria;
