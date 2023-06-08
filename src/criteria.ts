@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const criteria = {
     lowercase: {
         pattern: /[a-z]/,
@@ -22,4 +20,6 @@ const criteria = {
         message: "special characters",
     },
 };
-exports.default = criteria;
+
+export type Criteria = keyof typeof criteria;
+export default criteria;
