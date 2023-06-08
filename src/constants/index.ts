@@ -1,4 +1,13 @@
+import { DefaultConfig } from "../types";
 import { Criteria } from "../types";
+
+const defaultConfig: DefaultConfig = {
+    lowercase: true,
+    uppercase: true,
+    digits: true,
+    specialChars: true,
+    minLength: 8,
+};
 
 const criteria: Criteria = {
     lowercase: {
@@ -23,4 +32,4 @@ const criteria: Criteria = {
     },
 };
 
-export default criteria;
+export { criteria, defaultConfig };

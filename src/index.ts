@@ -1,1 +1,3 @@
-export { default as getPasswordStrength } from "./getPasswordStrength";
+import getPasswordStrength from "./getPasswordStrength";
+
+export default getPasswordStrength;

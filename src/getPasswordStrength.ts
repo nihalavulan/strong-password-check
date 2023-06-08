@@ -1,5 +1,4 @@
-import defaultConfig from "./constants/defaultConfig";
-import criteria from "./constants/criteria";
+import { defaultConfig, criteria } from "./constants";
 import getThreshold from "./utils/getThreshold";
 
 import type { CriteriaKey, Result } from "./types";
