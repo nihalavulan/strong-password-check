@@ -1,8 +1,9 @@
 export type CriteriaKey = "lowercase" | "uppercase" | "digits" | "specialChars";
+
 export type Criteria = {
     [Key in CriteriaKey]: {
         pattern: RegExp;
-        score: 1;
+        score: number;
         message: string;
     };
 };
@@ -13,6 +14,7 @@ export type DefaultConfig = {
     digits: boolean;
     specialChars: boolean;
     minLength: number;
+    [key: string]: boolean | number;
 };
 
 export type Result = {

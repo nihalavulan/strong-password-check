@@ -1,18 +1,13 @@
 import { defaultConfig, criteria } from "./constants";
 import getThreshold from "./utils/getThreshold";
 
-import type { CriteriaKey, Result } from "./types";
+import type { DefaultConfig, Result } from "./types";
 
 function getPasswordStrength(password: string, config = defaultConfig): Result {
     // Generate password strength criteria based on config
-    const passwordCriteria = [];
-    for (const [_, value] of Object.entries(criteria)) {
-        // used as casting to prevent error
-        const key = _ as CriteriaKey;
-        if (config[key]) {
-            passwordCriteria.push(value);
-        }
-    }
+    const passwordCriteria = Object.entries(criteria)
+        .filter(([key]) => (config as DefaultConfig)[key]) // Type assertion here
+        .map(([, value]) => value);
 
     // Add a minimum length check if one is set
     if (config.minLength) {
@@ -26,6 +21,7 @@ function getPasswordStrength(password: string, config = defaultConfig): Result {
     // Calculate the score based on the password strength criteria
     let score = 0;
     const messages = [];
+
     for (const { pattern, score: criterionScore, message } of passwordCriteria) {
         if (pattern.test(password)) {
             score += criterionScore;
@@ -36,16 +32,9 @@ function getPasswordStrength(password: string, config = defaultConfig): Result {
 
     // Determine the password strength based on the score
     const threshold = getThreshold(config);
-    let strength: string;
-    if (score >= threshold) {
-        strength = "Strong";
-    } else if (score >= threshold / 2) {
-        strength = "Moderate";
-    } else {
-        strength = "Weak";
-    }
+    const strength =
+        score >= threshold ? "Strong" : score >= threshold / 2 ? "Moderate" : "Weak";
 
-    // Return an object with the messages, and strength
     return { messages, strength };
 }
 
