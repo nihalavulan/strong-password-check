@@ -41,7 +41,7 @@ console.log(result);
 - `config`: An object containing the configuration options for the password strength checker. The following options are available:
 
 
-| value         | Type     | Default Value  | Description                                                       |
+| Value         | Type     | Default Value  | Description                                                       |
 | -----------   | -------- | -------------- | ----------------------------------------------------------------- |
 | uppercase     | Boolean  | true           | Whether the password must contain at least one uppercase letter.  |
 | lowercase     | Boolean  | true           | Whether the password must contain at least one lowercase letter.  |
