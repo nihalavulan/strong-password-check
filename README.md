@@ -58,11 +58,15 @@ console.log(result);
 ## Contributing
 
 Contributions are welcome! If you find a bug or would like to add a feature, please open an issue or pull request on GitHub.
+## Contributors
 
+This project exists thanks to all the people who have contributed.
+- [@iamnazeef](https://github.com/iamnazeef)
+- [@mza-codes](https://github.com/mza-codes)
 
 ## Author
 
-- [@nihalavulan](https://www.github.com/nihalavulan)
+- [@nihalavulan](https://github.com/nihalavulan)
 
 
 
