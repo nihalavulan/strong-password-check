@@ -54,6 +54,14 @@ console.log(result);
 - `messages`: An array of strings containing messages for each criterion that the password does not meet.
 - `strength`: A string indicating the strength of the password. Possible values are "Weak", "Moderate", and "Strong".
 
+## Generate Random Password
+```javascript
+import { generateRandomPassword } from 'strong-password-check';
+// generates a random secure password
+const password = generateRandomPassword(7);
+// x3uX/0o4tK.3
+```
+#### Exports a function, `generateRandomPassword`, which takes in a number argument and returns back a `string`
 
 ## Contributing
 
